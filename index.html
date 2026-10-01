@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cut Color Beauty | Luxury Salon - Frisco, TX</title>
+<meta name="description" content="Luxury blonde, balayage & extensions in Frisco TX - 2693 Preston Rd Suite #30. Book now +1 214-392-4463">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#c8a86a;--gold2:#a7854a;--black:#0f0f0f;--cream:#fdf8f0;--cream2:#f5efe4}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:#111;line-height:1.6}
+h1,h2,h3{font-family:'Playfair Display',serif}
+a{text-decoration:none}
+header{position:sticky;top:0;z-index:99;background:rgba(253,248,240,0.97);backdrop-filter:blur(10px);border-bottom:1px solid #e8dcc8;display:flex;justify-content:space-between;align-items:center;padding:14px 6%}
+.logo{font-weight:700;letter-spacing:2px;line-height:1.1}.logo span{display:block;font-weight:400;font-size:10px;letter-spacing:4px;color:var(--gold2)}
+nav{display:flex;gap:24px;font-size:13px;font-weight:600;letter-spacing:1px} nav a{color:#111}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#000;padding:12px 26px;border-radius:8px;font-weight:700;font-size:13px;border:none;cursor:pointer;display:inline-block}
+.badge{background:var(--gold);color:#000;font-size:10px;letter-spacing:2px;padding:6px 12px;font-weight:800;display:inline-block}
+
+/* HERO */
+.hero{display:grid;grid-template-columns:1.15fr 0.85fr;min-height:86vh;align-items:center;padding:40px 6%;gap:32px}
+.hero h1{font-size:58px;line-height:0.9}.hero h1 i{font-style:italic;font-weight:500;color:var(--gold2);display:block;font-size:34px;margin-top:6px}
+.hero p{color:#555;margin:18px 0 26px;max-width:500px}
+.hero-img{height:580px;border-radius:20px;overflow:hidden;background:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800') center/cover;box-shadow:0 20px 40px rgba(0,0,0,0.15)}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.stats span{background:#fff;border:1px solid #e8dcc8;padding:8px 14px;border-radius:999px;font-size:11px;font-weight:600}
+
+/* SERVICES */
+#services{background:var(--black);color:var(--cream);padding:80px 6%;text-align:center}
+#services h2{font-size:42px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px;text-align:left}
+.card{background:var(--cream);color:#111;border-radius:14px;overflow:hidden;border:1px solid var(--gold);transition:transform .3s}
+.card:hover{transform:translateY(-6px)}
+.card-img{height:180px;background-size:cover;background-position:center}
+.card-body{padding:18px}
+.card h3{font-size:18px}.price{color:var(--gold2);font-weight:800;margin:4px 0}
+.card p{font-size:13px;color:#666;margin-top:6px}
+
+/* GALLERY */
+#gallery{padding:80px 6%;text-align:center}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1100px;margin:36px auto}
+.g-item{height:300px;border-radius:14px;overflow:hidden;position:relative;background-size:cover;background-position:center}
+.g-item::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.6),transparent)}
+.g-item span{position:absolute;bottom:12px;left:12px;color:#fff;font-weight:700;font-size:13px;z-index:2}
+.ba-wrap{max-width:900px;margin:40px auto 0;background:#fff;border:1px solid #e8dcc8;border-radius:16px;padding:16px}
+.ba{position:relative;height:440px;border-radius:12px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr}
+.before{background:url('https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=700') center/cover}
+.after{background:url('https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?q=80&w=700') center/cover}
+.label{position:absolute;top:12px;padding:6px 14px;font-size:11px;font-weight:800;border-radius:6px;z-index:3}
+.label.b{left:12px;background:#111;color:#fff}.label.a{right:12px;background:var(--gold);color:#000}
+
+/* CONTACT */
+#contact{background:var(--black);color:var(--cream);padding:80px 6%;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact-info h2{font-size:40px;font-style:italic;margin-bottom:12px}
+.contact-box{background:rgba(255,255,255,0.06);border:1px solid rgba(200,168,106,0.3);border-radius:12px;padding:16px;margin:14px 0}
+.contact-box b{color:var(--gold);font-size:13px;letter-spacing:1px;display:block;margin-bottom:4px}
+.form{background:var(--cream);color:#111;padding:26px;border-radius:16px;border:1px solid var(--gold)}
+.form input,.form select,.form textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:8px;margin:6px 0 14px;font-family:'Inter'}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+footer{background:#000;color:#888;text-align:center;padding:20px;font-size:12px;border-top:1px solid #222}
+@media(max-width:950px){.hero{grid-template-columns:1fr}.hero h1{font-size:42px}.hero-img{height:380px}.cards{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr 1fr}#contact{grid-template-columns:1fr} nav{display:none}}
+@media(max-width:600px){.cards,.gallery-grid,.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">CUT COLOR<span>BEAUTY</span></div>
+<nav><a href="#home">HOME</a><a href="#services">SERVICES</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a></nav>
+<a href="tel:+12143924463" class="btn-gold">BOOK NOW</a>
+</header>
+
+<section class="hero" id="home">
+<div>
+<div class="badge">FRISCO TX • LUXURY SALON</div>
+<h1>Cut Color Beauty <i>Where Blonde Dreams Come True</i></h1>
+<p>Frisco's premier destination for luxury blonde, balayage & extensions at <b>2693 Preston Rd Suite #30</b>. Expert color, personalized care, flawless results. Rated 5.0 ★ from 200+ happy clients.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap">
+<a href="#contact" class="btn-gold">BOOK YOUR APPOINTMENT</a>
+<a href="#services" style="border:1px solid #111;padding:12px 26px;border-radius:8px;font-weight:700;font-size:13px;color:#111">VIEW SERVICES</a>
+</div>
+<div class="stats">
+<span>✦ Color Specialists</span><span>✂ Extensions Experts</span><span>★ 5.0 - 200+ Reviews</span><span>📍 Frisco, TX</span>
+</div>
+</div>
+<div class="hero-img"></div>
+</section>
+
+<section id="services">
+<div class="badge">OUR SERVICES</div>
+<h2 style="margin-top:10px">Signature Services</h2>
+<p style="color:#aaa;margin-top:6px">Tailored color & styling to bring your hair dreams to life</p>
+<div class="cards">
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=600')"></div><div class="card-body"><h3>Balayage</h3><div class="price">$180+</div><p>Custom hand-painted highlights for natural sun-kissed dimension</p></div></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=600')"></div><div class="card-body"><h3>Haircut & Blowout</h3><div class="price">$75+</div><p>Precision cut & style with signature blowout finish</p></div></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1560869713-bf165a549f42?q=80&w=600')"></div><div class="card-body"><h3>Full Color & Gloss</h3><div class="price">$120+</div><p>Full color, root touch-up, toner & gloss treatment</p></div></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=600')"></div><div class="card-body"><h3>Luxury Extensions</h3><div class="price">$250+</div><p>Hand-tied extensions for instant length & volume</p></div></div>
+</div>
+</section>
+
+<section id="gallery">
+<h2 style="font-size:42px">Real Transformations</h2>
+<p style="color:#666;margin-top:8px">Real clients. Real results. See the Cut Color difference.</p>
+<div class="gallery-grid">
+<div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=600')"><span>Blonde Balayage #1</span></div>
+<div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?q=80&w=600')"><span>Platinum Transformation</span></div>
+<div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=600')"><span>Sun-Kissed Highlights</span></div>
+<div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=600')"><span>Brunette to Blonde</span></div>
+<div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=600')"><span>Extension Glow Up</span></div>
+<div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=600')"><span>Color Correction</span></div>
+</div>
+
+<div class="ba-wrap">
+<div class="ba"><div class="before"></div><div class="after"></div><span class="label b">BEFORE</span><span class="label a">AFTER</span></div>
+<p style="font-size:13px;margin-top:14px">Balayage + Tone – 3.5 hour transformation by Senior Stylist at Frisco Studio</p>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact-info">
+<h2>Contact & Booking</h2>
+<p style="color:#ccc;margin-bottom:18px">Ready for your blonde transformation? Visit us in Frisco or book online.</p>
+
+<div class="contact-box"><b>📍 SALON ADDRESS</b>2693 Preston Rd, Mall Rd A 1080 Suite #30, Frisco, TX 75034, United States<br><a href="https://www.google.com/maps/search/2693+Preston+Rd+Frisco+TX+75034" target="_blank" style="color:var(--gold);font-size:12px;text-decoration:underline">View on Google Maps →</a></div>
+<div class="contact-box"><b>📞 PHONE - CALL / WHATSAPP</b><a href="tel:+12143924463" style="color:#fff;font-size:20px;font-weight:700">+1 214-392-4463</a><br><span style="font-size:12px;color:#aaa">Tap to call - instant booking</span></div>
+<div class="contact-box"><b>✉️ EMAIL</b>hello@cutcolorbeauty.com<br><b>🕒 HOURS</b>Tue–Sat: 9am–7pm • Sun–Mon: Closed<br><span style="font-size:12px;color:#aaa">Complimentary 15-min consultation available</span></div>
+</div>
+
+<div class="form">
+<h3 style="font-size:22px">Request Your Appointment</h3>
+<p style="font-size:13px;color:#666;margin:6px 0 16px">We will confirm within 24 hours</p>
+<div class="grid2"><div><label style="font-size:12px;font-weight:600">Name</label><input placeholder="Your full name"></div><div><label style="font-size:12px;font-weight:600">Phone</label><input placeholder="+1 214-392-XXXX"></div></div>
+<label style="font-size:12px;font-weight:600">Email</label><input type="email" placeholder="you@email.com">
+<div class="grid2"><div><label style="font-size:12px;font-weight:600">Service</label><select><option>Select Service</option><option>Balayage $180+</option><option>Haircut $75+</option><option>Full Color $120+</option><option>Extensions $250+</option></select></div><div><label style="font-size:12px;font-weight:600">Preferred Date</label><input type="date"></div></div>
+<label style="font-size:12px;font-weight:600">Message</label><textarea rows="3" placeholder="Tell us about your hair goals..."></textarea>
+<button class="btn-gold" style="width:100%;padding:14px;font-size:14px" onclick="alert('Thanks! We will contact you at +1 214-392-4463 within 24hrs')">BOOK NOW - FREE CONSULTATION</button>
+<p style="font-size:11px;text-align:center;margin-top:10px;color:#888">📍 2693 Preston Rd Suite #30, Frisco • 📞 +1 214-392-4463 • 1 month free support included</p>
+</div>
+</section>
+
+<footer>© 2026 Cut Color Beauty • 2693 Preston Rd Suite #30, Frisco, TX 75034 • <a href="tel:+12143924463" style="color:var(--gold)">+1 214-392-4463</a> • Instagram @cutcolorbeauty</footer>
+
+</body>
+</html>
